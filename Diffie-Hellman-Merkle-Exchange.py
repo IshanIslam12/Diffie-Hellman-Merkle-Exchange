@@ -52,7 +52,7 @@ def encryptBytes64(message, key):
 def decryptBytes64(message, key):
     return xorBytes(base64.b64decode(message), key).decode()
 
-armored = encryptBytes64("Assignment Completed", leagueSecretBytes)
+armored = encryptBytes64("Sorry I'm late", leagueSecretBytes)
 #print(f"Message to Prof. League: {armored}")
 
 league_message= decryptBytes64("7tU8qPTkSqXV8QBi2cz2dvginvAMa/M4ZEXxWKwWTYrfJGPBuDsB", leagueSecretBytes)
